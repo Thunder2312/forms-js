@@ -75,6 +75,13 @@ const ContactForm = () => {
 
     console.log("Form submitted", inputValues);
     alert(`Name: ${inputValues.name}\nEmail: ${inputValues.email}\nPhone: ${inputValues.phone}`);
+    setInputValues({
+      name: '',
+      email: '',
+      phone: '',
+      password: '',
+      confirmPassword: ''
+    })
   };
 
   return (
