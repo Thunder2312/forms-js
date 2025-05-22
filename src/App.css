@@ -1,0 +1,103 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  overflow-y: auto; /* Enables vertical scrolling */
+
+}
+h2{
+  text-align: center;
+}
+/* Form Styles */
+form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+/* Form Hover */
+form:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+label {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input Styles */
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box; /* Ensures padding and border are included in width calculation */
+}
+
+input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Button Styles */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem; /* Adds space between button and inputs */
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input Field & Button Hover Focus */
+input:focus, button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  button {
+    padding: 0.7rem 1.2rem;
+  }
+
+  input {
+    padding: 1rem; /* Increase padding to make inputs feel less cramped */
+  }
+}
